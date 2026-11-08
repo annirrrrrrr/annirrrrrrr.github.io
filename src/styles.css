@@ -132,3 +132,5 @@ html{scroll-padding-top:112px}
 .hero .hero-introduction{font-size:17px;line-height:1.6;max-width:560px;letter-spacing:0;text-shadow:0 1px 5px #102b3450}.hero .personal-links .pill{text-shadow:0 1px 3px #102b3440;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}@media(max-width:700px){.hero .hero-introduction{font-size:15px;max-width:340px;line-height:1.6}}
 
 .research-keywords{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:22px 0}.research-keywords li{font-size:12px;font-weight:500;line-height:1.5;color:#315b65;background:linear-gradient(120deg,#edf7f3,#eef7fa);border:1px solid #d8e9e7;border-radius:999px;padding:7px 12px}
+
+.with-project-photo h2.long-project-title{font-size:clamp(28px,3vw,40px);line-height:1.12;text-wrap:balance}@media(max-width:700px){.with-project-photo h2.long-project-title{font-size:25px}}
