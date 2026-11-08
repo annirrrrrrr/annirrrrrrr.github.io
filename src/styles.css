@@ -136,3 +136,32 @@ html{scroll-padding-top:112px}
 .with-project-photo h2.long-project-title{font-size:clamp(28px,3vw,40px);line-height:1.12;text-wrap:balance}@media(max-width:700px){.with-project-photo h2.long-project-title{font-size:25px}}
 
 .hero-purpose{font-style:italic;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.75);text-decoration-skip-ink:auto}
+
+/* Scrolling project stories: copy first, then the actual work. */
+.project-feed{display:grid;gap:40px;padding-bottom:100px}
+.project-entry{min-width:0;border:1px solid #d6e8e7;border-radius:28px;padding:40px;background:linear-gradient(140deg,#f4faf7,#f6fafc 75%);box-shadow:0 12px 32px #163e4d06;scroll-margin-top:120px}
+.project-entry-copy{max-width:820px;margin-bottom:32px}
+.project-entry h2{font-size:clamp(28px,3.2vw,44px);line-height:1.15;letter-spacing:-.035em;margin:14px 0 18px;text-wrap:balance}
+.project-entry p{font-size:16px;line-height:1.7;margin:0;max-width:780px}
+.project-entry .project-photo-gallery{display:flex;grid-row:auto;height:auto;gap:16px;margin:0}
+.project-entry .project-photo-gallery .project-photo{display:block;width:100%;height:clamp(260px,43vw,540px);object-fit:contain;border-radius:14px;margin:0;animation:none}
+.project-entry .photo-controls{height:44px;gap:20px}
+.project-entry .photo-controls button{width:44px;height:44px;font-size:20px}
+.project-entry .photo-controls span{font-size:12px}
+.nav-mobile-label{display:none}
+@media(max-width:700px){
+ .site-header{top:12px}
+ .capsule{width:calc(100% - 16px);max-width:none}
+ .nav-scroll{overflow:visible}
+ .nav-inner{grid-template-columns:repeat(5,minmax(0,1fr));width:100%;min-width:0;gap:0;padding:6px;height:56px}
+ .nav-inner a,.nav-inner .annie-destination{font-size:clamp(10px,2.85vw,12px);padding:0 2px;height:44px;letter-spacing:-.15px;white-space:nowrap}
+ .selection{top:6px;height:44px}
+ .nav-full-label{display:none}.nav-mobile-label{display:inline}
+ .project-feed{padding-left:16px;padding-right:16px;gap:24px;padding-bottom:60px}
+ .project-entry{padding:22px 18px 18px;border-radius:20px}
+ .project-entry-copy{margin-bottom:24px}
+ .project-entry h2{font-size:28px;margin:12px 0 16px;text-wrap:pretty}
+ .project-entry p{font-size:14px;line-height:1.7}
+ .project-entry .eyebrow{font-size:10px;letter-spacing:1.3px}
+ .project-entry .project-photo-gallery .project-photo{height:clamp(200px,65vw,380px);border-radius:10px}
+}
