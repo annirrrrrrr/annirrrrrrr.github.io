@@ -113,9 +113,11 @@ function Social(){const [arrival,children,spark]=socialStory.chapters;const phot
  <header className="news-header"><span className="eyebrow">SOCIAL RESPONSIBILITY</span><h1>{socialStory.title}</h1><div className="organization-identity"><img src="/images/teentors-logo.png" alt="Teentors Education logo"/><div><strong>Teentors Education</strong><span className="eyebrow">GUIZHOU · JAN–APR 2024</span></div></div></header>
  <div className="news-body"><p>{arrival.body[0]}</p>
  <figure className="news-photo news-photo-landscape"><img src="/images/guizhou-view.png" alt="River winding between hills in Guizhou" loading="lazy"/><figcaption>Guizhou · A view from my gap year</figcaption></figure>
- <p>{arrival.body[1]}</p>{photo(arrival)}<p>{children.body[0]}</p>
+ <p>{arrival.body[1]}</p><p>{socialStory.firstDay}</p>
+ <div className="news-photo-pair"><figure className="news-photo"><img src="/images/guizhou-first-room.webp" alt="My room on the first day in Guizhou" loading="lazy"/><figcaption>My room when I arrived</figcaption></figure><figure className="news-photo"><img src="/images/guizhou-first-mattress.webp" alt="A temporary mattress wrapped in black garbage bags" loading="lazy"/><figcaption>Wrapping the temporary mattress in garbage bags</figcaption></figure></div>
+ {photo(arrival)}<p>{children.body[0]}</p>
  <div className="news-photo-pair">{photo(children)}<figure className="news-photo news-photo-gifts"><img src="/images/guizhou-gift.jpg" alt="Handwritten notes and colorful folded paper gifts from my students" loading="lazy"/><figcaption>Handwritten notes and little gifts from my students</figcaption></figure></div>
- <p>{children.body[1]}</p><p>{spark.body[0]}</p>{photo(spark)}<p>{spark.body[1]}</p></div>
+ <p>{socialStory.homeVisit[0]}</p><figure className="news-photo news-photo-home-visit"><img src="/images/guizhou-home-visit.webp" alt="Visiting a student at home in Guizhou" loading="lazy"/><figcaption>A home visit that changed how I thought about support</figcaption></figure><p>{socialStory.homeVisit[1]}</p><p>{spark.body[0]}</p>{photo(spark)}<p>{spark.body[1]}</p></div>
  </article>}
 function Internships(){return <><Intro title="Internships" description="From equity research to maritime cybersecurity."/><section className="internship-list wrap" aria-label="Internship experience">{internships.map((job,i)=><article className={'internship-entry internship-'+job.id} key={job.id}>
  <header className="internship-heading"><div><span className="eyebrow">0{i+1} / {job.location}</span><h2>{job.company}</h2><h3>{job.role}</h3><p>{job.team}</p></div><span className="internship-date">{job.date}</span></header>

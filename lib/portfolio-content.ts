@@ -35,7 +35,12 @@ export const annieStories=[
  'I mapped equivalent terms across the rulebooks, organized the requirements, and built the database over two months. Review time went from three hours to forty minutes. Then I wrote a guide so the team could keep using it. I liked finding the problem, but making the fix useful to other people was the satisfying part.'
  ],href:'/internships',link:'Explore my experience'}
 ];
-export const socialStory={title:'Teentors @ Maocaoping Elementary School',chapters:[
+export const socialStory={title:'Teentors @ Maocaoping Elementary School',
+ firstDay:"On my first day, I had to work out where I would sleep. I found a discarded mattress in a pile of rubbish to use temporarily. It was too dirty to sleep on as it was, so I wrapped it in garbage bags. These are the photos I took as I was settling in.",
+ homeVisit:[
+ "One home visit made me look differently at how support was reaching the children. Meeting this student and seeing his home made the gaps in the process harder to overlook. Some students with strong grades were receiving help repeatedly, while others who needed it were missing out because of their grades or other eligibility requirements.",
+ "I kept thinking about what those requirements left out. If a child was struggling, did that make their need for support any less real? And if they were making progress, how could we make sure that effort was noticed?"
+ ],chapters:[
   {
     "id": "arriving",
     "label": "01 / FROM ONLINE TO IN PERSON",
@@ -56,7 +61,7 @@ export const socialStory={title:'Teentors @ Maocaoping Elementary School',chapte
     "alt": "Children smiling and making peace signs outside the school in Guizhou",
     "caption": "Guizhou · The children",
     "body": [
-      "What I remember most warmly is how much affection the children gave me. They brought me gifts and told me I was their favorite teacher. I had come hoping to help them, and found myself receiving so much from them, too.",
+      "As I got to know the children, they brought me little gifts: folded paper and handwritten notes. They told me I was their favorite teacher. These small exchanges became some of my warmest memories of teaching there.",
       "Getting to know them also changed how I thought about support. The school’s scholarships rewarded the highest grades, but I kept thinking about the children who were trying harder and making progress. What would tell them that their effort mattered?"
     ]
   },
@@ -68,7 +73,7 @@ export const socialStory={title:'Teentors @ Maocaoping Elementary School',chapte
     "alt": "Children holding scholarship awards outside the school",
     "caption": "Teentors · The Spark Scholarship",
     "body": [
-      "That question led me to work with the principal on the Spark Scholarship through Teentors. We took financial need, participation, and improvement into account, so recognition could reach beyond the highest scores.",
+      "I brought those questions to the principal. Together, we launched the Spark Scholarship through Teentors, taking financial need, participation, and improvement into account. I wanted the criteria to make room for children whose effort and circumstances were not reflected in a ranking.",
       "Later, the principal told me their behavior had noticeably changed. The children could see a return on their effort. That was the part that stayed with me: they were beginning to believe that trying could make a difference. It was the outcome I had hoped for."
     ]
   }
