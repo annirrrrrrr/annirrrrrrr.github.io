@@ -314,3 +314,5 @@ html{scroll-padding-top:112px}
 .opening-block-b{width:105px;height:145px;right:13%;top:25%;background:linear-gradient(145deg,#d4dcf199,#eaf1fc44);transform:rotate(15deg)}
 .opening-block-c{width:65px;height:65px;right:24%;bottom:10%;background:#e9dfbb66;transform:rotate(-12deg);border-radius:12px}
 @media(max-width:700px){.projects-opening{min-height:60svh;padding:120px 24px 44px;margin-bottom:24px;gap:22px}.projects-opening h1{font-size:42px}.opening-block-a{width:88px;height:70px;left:-20px;top:34%}.opening-block-b{width:70px;height:95px;right:-14px;top:25%}.opening-block-c{width:40px;height:40px;right:15%;bottom:10%}.opening-arrow{font-size:42px}}
+
+.contribution-points{margin:0;padding-left:17px;display:grid;gap:9px}.contribution-points strong{font-weight:600;color:#494438}
