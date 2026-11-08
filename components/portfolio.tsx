@@ -117,7 +117,8 @@ const projectThemes:Record<string,{tags:string[];focus:string;note:string}>={
 const maglevDetails=[
  {title:'Track design',text:'Interlocking track segments let children build their own route. Magnet spacing across the connections was designed to keep the train moving smoothly.',x:30,y:78},
  {title:'Magnet carriers',text:'Removable holders position the neodymium magnets. Repulsion supports the train; spacing and alignment were refined to reduce bouncing and derailment.',x:43,y:63},
- {title:'Laser-cut acrylic',text:'Transparent walls guide the train laterally while keeping levitation visible. Covers and stabilizers hold the track assembly together.',x:66,y:47}
+ {title:'Laser-cut acrylic',text:'Transparent walls guide the train laterally while keeping levitation visible. Covers and stabilizers hold the track assembly together.',x:66,y:47},
+ {title:'Track holder',text:'Inspired by LEGO, the track holder supports the rail and provides a place for LEGO ornaments, letting children personalize the build and make it more playful.',x:79,y:72}
 ];
 const buildSteps=[
  ['cardboard','Test the idea','A cardboard prototype to test magnetic levitation.','Success'],
