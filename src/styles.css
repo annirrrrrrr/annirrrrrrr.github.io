@@ -134,3 +134,5 @@ html{scroll-padding-top:112px}
 .research-keywords{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:22px 0}.research-keywords li{font-size:12px;font-weight:500;line-height:1.5;color:#315b65;background:linear-gradient(120deg,#edf7f3,#eef7fa);border:1px solid #d8e9e7;border-radius:999px;padding:7px 12px}
 
 .with-project-photo h2.long-project-title{font-size:clamp(28px,3vw,40px);line-height:1.12;text-wrap:balance}@media(max-width:700px){.with-project-photo h2.long-project-title{font-size:25px}}
+
+.hero-purpose{font-style:italic;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.75);text-decoration-skip-ink:auto}
