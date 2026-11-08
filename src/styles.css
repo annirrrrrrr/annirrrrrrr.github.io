@@ -290,3 +290,8 @@ html{scroll-padding-top:112px}
 .workshop-copy h3{font-size:26px;line-height:1.2;margin:12px 0 18px}
 .maglev-spec{margin:22px 0 28px}.maglev-spec>div{padding:13px 0;border-top:1px solid #b8ac8c55}.maglev-spec dt{font-size:13px;font-weight:650;color:#3d3a32;margin-bottom:6px}.maglev-spec dd{margin:0;font-size:14px;line-height:1.65;color:#686356}
 @media(max-width:700px){.maglev-workshop .workshop-assembly,.maglev-workshop .workshop-copy{grid-column:auto;grid-row:auto}.maglev-workshop .workshop-tags{max-width:100%;gap:6px}.maglev-workshop .workshop-header h2{font-size:28px}.workshop-copy h3{font-size:23px}}
+
+/* Rubber-stamp ink: heavy type, single border, and irregular worn texture. */
+.walk-stamp{border:4px solid currentColor;border-radius:3px;background:transparent;color:#278538;font:900 24px/1 "Arial Black",Arial,sans-serif;letter-spacing:.045em;padding:10px 14px;right:14px;top:18px;transform:rotate(11deg);mix-blend-mode:multiply;mask-image:url('/images/stamp-ink.svg');mask-size:100% 100%;-webkit-mask-image:url('/images/stamp-ink.svg');-webkit-mask-size:100% 100%;pointer-events:none}
+.walk-stamp.stamp-failed{color:#bb342c}.walk-stamp.stamp-new-idea{color:#a56b19}
+@media(max-width:700px){.walk-stamp{font-size:19px;padding:8px 10px;border-width:3px}}
