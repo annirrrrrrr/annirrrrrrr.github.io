@@ -267,3 +267,15 @@ html{scroll-padding-top:112px}
 .draft-fragment-d{width:140px;height:130px;left:47%;top:585px;background-position:-20px -90px;transform:rotate(7deg)}
 .draft-fragment-e{width:130px;height:110px;right:28px;top:855px;background-position:-160px -25px;transform:rotate(-9deg)}
 @media(max-width:700px){.draft-fragment-a{width:100px;height:90px;right:-12px;top:55px;opacity:.13}.draft-fragment-b{display:block;right:5px;top:610px;width:125px;height:75px;opacity:.14}.draft-fragment-c,.draft-fragment-d,.draft-fragment-e{display:none}}
+
+/* Original magnetic-field sketches, like red-pencil notes on the drawing. */
+.magnetic-sketch{position:absolute;z-index:0;pointer-events:none;color:#ad4839;opacity:.32;width:170px;transform:rotate(-8deg)}
+.magnetic-sketch svg{display:block;width:100%;overflow:visible;stroke:currentColor;stroke-width:.85}
+.magnetic-sketch text{fill:currentColor;stroke:none;font:10px monospace}
+.magnetic-sketch span{display:block;text-align:center;font:8px monospace;letter-spacing:.14em;margin-top:4px}
+.magnetic-sketch-field{left:44%;top:200px;width:145px}
+.magnetic-sketch-repel{right:40px;top:760px;width:150px;transform:rotate(6deg)}
+.repulsion-arrow{animation:field-breathe 4s ease-in-out infinite;transform-origin:center}
+@keyframes field-breathe{50%{opacity:.4;transform:scaleX(1.08)}}
+@media(max-width:700px){.magnetic-sketch-field{left:auto;right:10px;top:330px;width:95px;opacity:.23}.magnetic-sketch-repel{display:none}}
+@media(prefers-reduced-motion:reduce){.repulsion-arrow{animation:none}}
