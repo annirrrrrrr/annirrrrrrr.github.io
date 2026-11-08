@@ -353,3 +353,21 @@ html{scroll-padding-top:112px}
 @media(max-width:700px){.maglev-workshop .workshop-main{gap:28px;margin-top:0}.maglev-spec{column-gap:14px}.film-walk .walk-stage{gap:12px;grid-template-columns:1fr 1fr}.film-walk .walk-print img{height:145px}.film-walk .walk-story h3{font-size:16px}.film-walk .walk-controls button{height:44px;width:44px}.film-walk .handwritten{font-size:10px}.film-walk .walk-story p{font-size:11px}.film-strip button{flex-basis:62px}.maglev-workshop .workshop-copy>h3{font-size:23px}}
 @media(prefers-reduced-motion:reduce){.film-strip{scroll-behavior:auto}}
 @media(min-width:701px){.maglev-workshop .workshop-assembly{align-self:stretch;display:flex;flex-direction:column}.workshop-assembly .assembled-display{margin-top:auto;padding-top:35px;padding-bottom:20px}.workshop-assembly>figcaption{flex-shrink:0}}
+
+/* Builder's notebook opening, continuous behind the floating navigation. */
+.page:has(.projects-opening){padding-top:0}
+.projects-opening{min-height:58svh;margin-bottom:28px;background-color:#f4f3ed;background-image:linear-gradient(#72796b12 1px,transparent 1px),linear-gradient(90deg,#72796b12 1px,transparent 1px);background-size:28px 28px;border-bottom:1px solid #d8d7cd;gap:18px;padding-top:130px}
+.projects-opening h1{color:#303c3b;font-weight:500}
+.builder-label{font:10px monospace;letter-spacing:.18em;color:#776c57;z-index:1}
+.builder-drawing{position:absolute;inset:70px 0 0;pointer-events:none;z-index:-1;opacity:.3}
+.builder-drawing svg{width:100%;height:100%;stroke:#8a7655;stroke-width:1;stroke-dasharray:none}
+.opening-arrow{color:#a25738;border:1px solid #a2573850;border-radius:0;width:44px;height:50px;font-size:34px;transform:rotate(-3deg)}
+.workshop-bottom{grid-column:1 / -1;display:grid;grid-template-columns:1fr 1.08fr;gap:32px;margin-top:28px;border-top:1px solid #c9bea0;padding-top:20px;position:relative;z-index:1}
+.workshop-bottom .workshop-scrapbook{margin:0;padding:0;border:0;grid-column:auto;min-width:0}
+.workshop-outcome{padding:4px 0 0 24px;border-left:1px solid #c9bea0}
+.workshop-outcome h3{font-size:24px;color:#33352f;margin:12px 0 16px}
+.workshop-outcome p{font-size:14px;line-height:1.75;color:#686356;max-width:480px}
+.workshop-outcome strong{color:#8e4c38;font-weight:650}
+.maglev-workshop .workshop-assembly{align-self:start;display:block}
+.workshop-assembly .assembled-display{margin-top:25px;padding:0}
+@media(max-width:700px){.projects-opening{min-height:56svh;padding-top:120px}.builder-label{font-size:8px;letter-spacing:.1em}.builder-drawing{inset:95px -130px 0;opacity:.2}.workshop-bottom{grid-template-columns:1fr;gap:24px;margin-top:24px}.workshop-outcome{padding:18px 0 0;border-left:0;border-top:1px solid #c9bea0}.workshop-outcome p{font-size:13px}.workshop-assembly .assembled-display{margin-top:18px}}
