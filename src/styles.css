@@ -279,3 +279,14 @@ html{scroll-padding-top:112px}
 @keyframes field-breathe{50%{opacity:.4;transform:scaleX(1.08)}}
 @media(max-width:700px){.magnetic-sketch-field{left:auto;right:10px;top:330px;width:95px;opacity:.23}.magnetic-sketch-repel{display:none}}
 @media(prefers-reduced-motion:reduce){.repulsion-arrow{animation:none}}
+
+/* Prioritize specifications over oversized headings and tags. */
+.maglev-workshop .workshop-header{grid-column:1 / -1;grid-row:1}
+.maglev-workshop .workshop-header h2{font-size:clamp(28px,3.4vw,48px);line-height:1.12;max-width:900px;margin:16px 0 8px}
+.maglev-workshop .workshop-tags{grid-column:1 / -1;grid-row:2;display:flex;flex-wrap:nowrap;gap:8px;margin:8px 0 24px;overflow-x:auto}
+.maglev-workshop .workshop-tags li{font-size:11px;padding:6px 9px;border-radius:4px;white-space:nowrap;flex:0 0 auto}
+.maglev-workshop .workshop-assembly{grid-column:2;grid-row:3;margin-top:0}
+.maglev-workshop .workshop-copy{grid-column:1;grid-row:3}
+.workshop-copy h3{font-size:26px;line-height:1.2;margin:12px 0 18px}
+.maglev-spec{margin:22px 0 28px}.maglev-spec>div{padding:13px 0;border-top:1px solid #b8ac8c55}.maglev-spec dt{font-size:13px;font-weight:650;color:#3d3a32;margin-bottom:6px}.maglev-spec dd{margin:0;font-size:14px;line-height:1.65;color:#686356}
+@media(max-width:700px){.maglev-workshop .workshop-assembly,.maglev-workshop .workshop-copy{grid-column:auto;grid-row:auto}.maglev-workshop .workshop-tags{max-width:100%;gap:6px}.maglev-workshop .workshop-header h2{font-size:28px}.workshop-copy h3{font-size:23px}}
