@@ -300,3 +300,6 @@ html{scroll-padding-top:112px}
 .magnetic-sketch-field span{display:none}
 .draft-fragment-c{left:43%;top:205px;width:185px;height:230px;background-size:550px 367px;background-position:-184px -15px;transform:rotate(-9deg);opacity:.38}
 @media(max-width:700px){.magnetic-sketch-field{left:auto;right:18px;top:16px;width:65px;opacity:.2}.draft-fragment-c{display:block;left:auto;right:8px;top:250px;width:135px;height:175px;background-size:415px 277px;background-position:-139px -11px;opacity:.22}}
+
+.projects-opening{padding-top:150px;padding-bottom:42px}.projects-opening h1{font-size:clamp(36px,5.2vw,68px);font-weight:450;line-height:1.12}.projects-opening h1 a{display:inline-block;font-weight:300;margin-left:12px;transition:transform .2s}.projects-opening h1 a:hover{transform:translateY(5px)}#selected-projects{scroll-margin-top:120px}.research-direct{padding-top:150px}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:700px){.projects-opening{padding-top:120px;padding-bottom:28px}.projects-opening h1{font-size:36px}.research-direct{padding-top:125px}}
