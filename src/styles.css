@@ -181,3 +181,16 @@ html{scroll-padding-top:112px}
 .project-detail::backdrop{background:#18353f75;backdrop-filter:blur(6px)}
 .project-detail h2{font-size:32px;margin:18px 32px 20px 0}.project-detail p{font-size:15px}.project-detail .project-photo-gallery{height:400px}.detail-close{position:absolute;top:12px;right:14px;width:44px;height:44px;border:0;background:transparent;color:var(--ink);font-size:28px}
 @media(max-width:700px){.project-entry{grid-template-columns:1fr;gap:22px;padding:16px;min-height:0}.project-cover{height:230px}.project-entry-copy{padding:0 4px 6px}.project-entry h2{font-size:26px}.project-entry .eyebrow{margin-bottom:14px}.project-entry p{font-size:14px}.project-detail{padding:30px 20px}.project-detail h2{font-size:26px}.project-detail .project-photo-gallery{height:280px}.project-detail .project-photo-gallery .project-photo{height:230px}}
+
+/* Soft color fields give each build its own visual identity. */
+.project-feed{position:relative;background:radial-gradient(ellipse at 0 15%,#d9f4ea65,transparent 45%),radial-gradient(ellipse at 100% 65%,#dfeefa85,transparent 48%)}
+.project-entry{--project-tint:#e4f5ee;--project-edge:#a8d8c8;position:relative;isolation:isolate;background:linear-gradient(115deg,var(--project-tint),#ffffffed 58%,#eef6fa) padding-box,linear-gradient(130deg,var(--project-edge),#c4dbe9 48%,#ddd5e8 82%,#b9e4db) border-box;box-shadow:0 12px 34px #254d5d0c,inset 0 1px 0 #fff;overflow:hidden}
+.project-entry-02{--project-tint:#e5f2fa;--project-edge:#a7ccdf}.project-entry-03{--project-tint:#f8ede7;--project-edge:#e3c4ba}.project-entry-04{--project-tint:#edf3df;--project-edge:#c8d8a9}
+.project-entry::after{content:"";position:absolute;width:260px;height:260px;right:-160px;top:-170px;border:1px solid var(--project-edge);border-radius:50%;box-shadow:0 0 0 24px #ffffff45,0 0 0 25px #ffffff70;z-index:-1;pointer-events:none}
+.project-entry:hover{transform:translateY(-3px);box-shadow:0 18px 42px #254d5d18,inset 0 1px 0 #fff}
+.project-cover{background:var(--project-tint);box-shadow:0 2px 8px #2145530a;overflow:hidden}
+.project-cover img{object-fit:cover;object-position:center;transition:transform .5s ease}
+.project-entry:hover .project-cover img{transform:scale(1.035)}
+.project-more{background:#ffffffb3;box-shadow:0 2px 8px #21455307;border-color:var(--project-edge);transition:background .2s,box-shadow .2s}
+.project-more:hover{background:white;box-shadow:0 4px 14px #21455315}
+@media(prefers-reduced-motion:reduce){.project-entry,.project-cover img{transition:none}.project-entry:hover,.project-entry:hover .project-cover img{transform:none}}
