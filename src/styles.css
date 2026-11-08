@@ -194,3 +194,19 @@ html{scroll-padding-top:112px}
 .project-more{background:#ffffffb3;box-shadow:0 2px 8px #21455307;border-color:var(--project-edge);transition:background .2s,box-shadow .2s}
 .project-more:hover{background:white;box-shadow:0 4px 14px #21455315}
 @media(prefers-reduced-motion:reduce){.project-entry,.project-cover img{transition:none}.project-entry:hover,.project-entry:hover .project-cover img{transform:none}}
+
+/* Full-bleed internship photo collages, with narrower portrait columns. */
+.internship-photos figure{min-width:0}
+.internship-dnv .internship-photos{grid-template-columns:1.4fr .75fr 1.4fr;gap:16px}
+.internship-asi .internship-photos{grid-template-columns:.85fr 1.65fr .85fr;gap:16px}
+.internship-dnv .internship-photos img,.internship-asi .internship-photos img{height:300px;max-height:none;aspect-ratio:auto;object-fit:cover;background:#edf3f2}
+.internship-shenwan .internship-photos img{object-fit:cover;background:#edf3f2}
+@media(max-width:700px){
+ .internship-dnv .internship-photos,.internship-asi .internship-photos{grid-template-columns:1fr 1fr;gap:14px}
+ .internship-dnv .internship-photos figure:first-child{grid-column:1/-1}
+ .internship-dnv .internship-photos img{height:240px;aspect-ratio:auto}
+ .internship-dnv .internship-photos figure:first-child img{height:auto;aspect-ratio:3/2}
+ .internship-asi .internship-photos figure:nth-child(2){grid-column:1/-1;grid-row:1}
+ .internship-asi .internship-photos img{height:auto;aspect-ratio:3/4;object-fit:cover}
+ .internship-asi .internship-photos figure:nth-child(2) img{aspect-ratio:3/2}
+}
