@@ -295,3 +295,8 @@ html{scroll-padding-top:112px}
 .walk-stamp{border:4px solid currentColor;border-radius:3px;background:transparent;color:#278538;font:900 24px/1 "Arial Black",Arial,sans-serif;letter-spacing:.045em;padding:10px 14px;right:14px;top:18px;transform:rotate(11deg);mix-blend-mode:multiply;mask-image:url('/images/stamp-ink.svg');mask-size:100% 100%;-webkit-mask-image:url('/images/stamp-ink.svg');-webkit-mask-size:100% 100%;pointer-events:none}
 .walk-stamp.stamp-failed{color:#bb342c}.walk-stamp.stamp-new-idea{color:#a56b19}
 @media(max-width:700px){.walk-stamp{font-size:19px;padding:8px 10px;border-width:3px}}
+/* Swap the field sketch and track detail; retain both interlocking ends. */
+.magnetic-sketch-field{left:48%;top:16px;width:90px;transform:rotate(-8deg);opacity:.3}
+.magnetic-sketch-field span{display:none}
+.draft-fragment-c{left:43%;top:205px;width:185px;height:230px;background-size:550px 367px;background-position:-184px -15px;transform:rotate(-9deg);opacity:.38}
+@media(max-width:700px){.magnetic-sketch-field{left:auto;right:18px;top:16px;width:65px;opacity:.2}.draft-fragment-c{display:block;left:auto;right:8px;top:250px;width:135px;height:175px;background-size:415px 277px;background-position:-139px -11px;opacity:.22}}
