@@ -797,8 +797,8 @@ html{scroll-padding-top:112px}
 .projects-access>p{font-size:14px;margin-bottom:28px}
 .project-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 36px}
 .project-shortcut{display:flex;flex-direction:column;align-items:center;gap:9px;min-width:0;border-radius:16px}
-.shortcut-portrait{position:relative;display:block;width:clamp(110px,12vw,164px);aspect-ratio:1;border-radius:50%;background:#e9f2f6;box-shadow:0 5px 18px #00274c12;transition:transform .25s,box-shadow .25s}
-.shortcut-portrait>img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.shortcut-portrait{position:relative;display:block;width:clamp(110px,12vw,164px);height:clamp(110px,12vw,164px);flex:none;aspect-ratio:1;border-radius:50%;background:#e9f2f6;box-shadow:0 5px 18px #00274c12;transition:transform .25s,box-shadow .25s}
+.shortcut-portrait>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
 .shortcut-maglev .shortcut-portrait{background:#f2edda}
 .shortcut-maglev img{object-fit:contain;padding:6px}
 .shortcut-bower .shortcut-portrait{background:#f43135}
@@ -808,7 +808,7 @@ html{scroll-padding-top:112px}
 .shortcut-euchre .shortcut-portrait{background:radial-gradient(circle,#315e45,#132c21);overflow:hidden}
 .shortcut-go{position:absolute;right:0;bottom:5px;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:#00274c;color:white;border:3px solid white}
 .project-shortcut strong{font-size:17px;font-weight:600;color:#00274c}
-.shortcut-keywords{font-size:11px;line-height:1.5;color:#426f80}
+.shortcut-keywords{font-size:16px;font-weight:600;line-height:1.5;color:#24536b;max-width:300px;text-wrap:balance}
 .project-shortcut:hover .shortcut-portrait,.project-shortcut:focus-visible .shortcut-portrait{transform:translateY(-5px);box-shadow:0 12px 24px #00274c22}
 .shortcut-cards{display:flex;justify-content:center;align-items:center;height:100%;padding-left:13px}
 .shortcut-cards>span{width:54px;height:78px;padding:9px 5px;background:#fffbee;border-radius:6px;box-shadow:0 2px 9px #0005;color:#172822;font:600 22px Georgia;transform:rotate(-15deg)}
@@ -817,7 +817,7 @@ html{scroll-padding-top:112px}
 .stack-gallery-label h2{font-size:22px;color:#00274c;letter-spacing:-.02em}
 .stack-gallery-label>span{display:flex;align-items:center;gap:12px;font-size:11px;color:#426f80}
 #mbot,#maglev,#bower,#garbogenius,#euchre{scroll-margin-top:112px}
-@media(max-width:700px){.projects-access{padding-top:25px;padding-bottom:32px}.project-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 14px}.shortcut-portrait{width:112px}.shortcut-keywords{font-size:10px;max-width:155px}.project-shortcut strong{font-size:15px}.stack-gallery-label h2{font-size:20px}#mbot,#maglev,#bower,#garbogenius,#euchre{scroll-margin-top:96px}}
+@media(max-width:700px){.projects-access{padding-top:25px;padding-bottom:32px}.project-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 14px}.shortcut-portrait{width:112px;height:112px}.shortcut-keywords{font-size:13px;max-width:170px}.project-shortcut strong{font-size:15px}.stack-gallery-label h2{font-size:20px}#mbot,#maglev,#bower,#garbogenius,#euchre{scroll-margin-top:96px}}
 @media(prefers-reduced-motion:reduce){.shortcut-portrait{transition:none}.project-shortcut:hover .shortcut-portrait{transform:none}}
 
 .course-mark{display:flex;align-items:center;gap:12px;margin-bottom:18px}
