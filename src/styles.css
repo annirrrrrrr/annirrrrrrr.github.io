@@ -505,3 +505,14 @@ html{scroll-padding-top:112px}
 
 .bower-study .bower-end{background:#852b25;color:#fff;padding:18px 20px!important;border-top:1px solid #ffffff66;border-radius:12px;font-size:13px;line-height:1.65}
 .bower-study .bower-end span,.bower-study .bower-end strong,.bower-study .bower-end a{color:#fff;opacity:1}
+
+/* Independent columns keep the deck directly below the story, not below the phone. */
+.bower-copy .bower-original-flow{margin:22px 0 0}
+.bower-play .bower-wire-notes{margin-top:24px;padding-top:20px;border-top:1px solid #ffffff40}
+.bower-play .bower-wire-notes h3{font-size:21px;margin:8px 0}
+.bower-play .bower-wire-notes p{font-size:12px;margin-bottom:12px}
+.bower-play .bower-wire-stack{margin:12px 0;gap:5px}
+.bower-header{margin-bottom:24px}
+.bower-screen-gallery{margin-top:28px}
+.bower-phone-note{display:none}
+@media(max-width:760px){.bower-play .bower-wire-notes{display:block}.bower-play .bower-wire-stack{margin-top:12px}.bower-copy .bower-original-flow{margin-top:20px}.bower-screen-gallery{margin-top:24px}}
