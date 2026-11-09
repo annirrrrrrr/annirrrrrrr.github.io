@@ -698,3 +698,6 @@ html{scroll-padding-top:112px}
 .text-link{color:#176a88}
 .footer-personal-links a{color:#00274c}
 .selected-build-card{background:linear-gradient(120deg,#eff8fa,#f0f5fc);border-color:#cee2ed}
+
+#mbot,#maglev{scroll-margin-top:110px}
+@media(max-width:700px){#mbot,#maglev{scroll-margin-top:88px}}
