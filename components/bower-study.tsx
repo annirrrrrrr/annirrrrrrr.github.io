@@ -31,6 +31,6 @@ export default function BowerStudy(){
    <div className="bower-tabs" role="group" aria-label="Design iterations">{iterations.map((s,i)=><button key={s.label} aria-pressed={active===i} onClick={()=>setActive(i)}><span>0{i+1}</span>{s.label}</button>)}</div>
    <div className="bower-iteration"><figure><img src={step.image} alt={step.label+' for BOWER'} loading="lazy"/><figcaption>{step.label} · Original project documentation</figcaption></figure><div aria-live="polite"><h4>{step.title}</h4><p>{step.text}</p></div></div>
   </section>
-  <footer className="bower-end"><span><strong>Designed outcome</strong> · An interactive concept connecting planning, progress, and pet care.</span><a href="https://www.figma.com/design/7DpQeHzEFvIAbXdxteypcz/BOWER---Final-Prototype" target="_blank" rel="noreferrer">View design file ↗</a></footer>
+  <footer className="bower-end"><span><strong>Designed outcome</strong> · An interactive concept connecting planning, progress, and pet care.</span><div className="bower-resource-links"><a href="/documents/bower-pitch-deck.pdf" target="_blank" rel="noopener noreferrer">Pitch deck (PDF) ↗</a><a href="https://www.figma.com/design/7DpQeHzEFvIAbXdxteypcz/BOWER---Final-Prototype" target="_blank" rel="noreferrer">View design file ↗</a></div></footer>
  </article>
 }
