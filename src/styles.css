@@ -593,3 +593,21 @@ html{scroll-padding-top:112px}
 .garbo-flow-note{font-size:12px!important;color:#61757e!important;margin:14px 0 0!important}
 @media(max-width:760px){.garbo-intro{grid-template-columns:1fr;gap:20px}.garbo-origin-visible{max-width:210px}.garbo-model-gallery{grid-template-columns:1fr;margin:24px 0;gap:24px}.garbo-model-gallery img{height:240px}.garbo-flow-scroll{overflow-x:auto}}
 @media(prefers-reduced-motion:reduce){.garbo-model-gallery img{transition:none}}
+
+/* GarboGenius: charcoal studio backdrop for the white concept models. */
+.garbo-study{background:radial-gradient(ellipse at 60% 30%,#292c30 0%,#17191c 48%,#101214 100%)!important;color:#f3f4f5;border-color:#383c41!important;color-scheme:dark}
+.garbo-heading h2,.garbo-study h3,.garbo-study h4,.garbo-study strong{color:#f5f6f7}
+.garbo-study p,.garbo-heading>p{color:#c5cbd1}
+.garbo-study .eyebrow,.garbo-concept,.garbo-loop>span{color:#a6b6c2}
+.garbo-tags li{color:#d1dbe2;border-color:#4b555e;background:#ffffff06}
+.garbo-origin-visible figcaption{color:#d0dce3}
+.garbo-model-gallery figcaption,.garbo-model-gallery figcaption span{color:#b5c4cf}
+.garbo-blueprint,.garbo-materials,.garbo-study .garbo-reflection{border-color:#41484e}
+.garbo-study .garbo-reflection{color:#c5cbd1}
+.garbo-study .garbo-flow-note{color:#aebcc6!important}
+.garbo-service-svg>g>line{stroke:#41494f}
+.garbo-service-svg>g>text{fill:#acbdc9}
+.garbo-service-svg>g>rect{fill:#242a2f;stroke:#647783}
+.garbo-service-svg>g>rect+text{fill:#e2e9ed}
+.garbo-service-svg>g[fill="none"]{stroke:#a1b8c7}
+.garbo-service-svg marker path{fill:#a1b8c7}
