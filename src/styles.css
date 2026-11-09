@@ -516,3 +516,26 @@ html{scroll-padding-top:112px}
 .bower-screen-gallery{margin-top:28px}
 .bower-phone-note{display:none}
 @media(max-width:760px){.bower-play .bower-wire-notes{display:block}.bower-play .bower-wire-stack{margin-top:12px}.bower-copy .bower-original-flow{margin-top:20px}.bower-screen-gallery{margin-top:24px}}
+
+/* Connected product flow, composed from original screens instead of a slide rectangle. */
+.bower-main{grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:32px}
+.bower-prototype{width:184px;height:396px;border-radius:26px}
+.bower-prototype iframe{width:calc(100% + 96px);height:calc(100% + 116px);left:-48px;top:-58px}
+.bower-play{max-width:270px}.bower-prototype-footer{flex-wrap:wrap;gap:6px}
+.bower-integrated-flow{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:32px;align-items:start;margin-top:24px}
+.bower-step-screens{display:flex;gap:22px;justify-content:space-between;margin-top:12px}
+.bower-step-screens figure{margin:0;min-width:0;flex:1;text-align:center}
+.bower-step-screens h3{font-size:21px;letter-spacing:.01em;margin:0 0 12px;font-weight:600}
+.bower-step-screens img{display:block;width:100%;max-width:150px;height:auto;margin:auto;border-radius:12px;box-shadow:0 12px 24px #75221c30}
+.bower-integrated-flow .bower-wire-notes h3{font-size:21px;margin:8px 0}
+.bower-integrated-flow .bower-wire-notes p{font-size:12px;line-height:1.6;margin-bottom:12px}
+.bower-integrated-flow .bower-wire-stack{margin:12px 0;gap:6px}
+.research-list.research-direct{padding-top:30px;max-width:1200px;padding-left:32px;padding-right:32px}
+.research-list.research-direct article{grid-template-columns:minmax(0,40%) minmax(0,1fr);gap:56px;align-items:start;padding:36px 0;border-top:0}
+.research-list.research-direct h2{font-size:30px;line-height:1.25;letter-spacing:-.025em;margin:8px 0 12px}
+.research-list.research-direct p{font-size:17px;line-height:1.75;margin:0 0 16px}
+.research-list.research-direct .research-thumb{width:100%;height:auto;aspect-ratio:1.54;border-radius:8px;background:transparent}
+.research-list.research-direct .research-thumb img{object-fit:contain}
+.research-list.research-direct .accent-line{width:52px;margin-bottom:24px}
+.research-list.research-direct .text-link{font-size:16px}
+@media(max-width:760px){.bower-main{grid-template-columns:1fr}.bower-integrated-flow{grid-template-columns:1fr;gap:24px}.bower-step-screens{gap:10px}.bower-step-screens h3{font-size:18px}.bower-integrated-flow .bower-wire-notes{display:block}.research-list.research-direct{padding-top:0;padding-left:24px;padding-right:24px}.research-list.research-direct article{grid-template-columns:1fr;gap:22px;padding:28px 0}.research-list.research-direct h2{font-size:25px}.research-list.research-direct p{font-size:16px}}
