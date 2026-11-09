@@ -739,3 +739,19 @@ html{scroll-padding-top:112px}
 .story-opening em{white-space:normal}
 }
 @media(prefers-reduced-motion:reduce){.selected-build-card,.selected-build-card>img{transition:none}}
+
+/* Keep the Guizhou chapter compact, with a landscape photo crop. */
+.annie-story.story-guizhou{gap:44px;margin-block:-20px}
+.story-guizhou .story-photo{aspect-ratio:3/2;height:auto;max-height:350px}
+.story-guizhou .story-photo img{object-fit:cover;object-position:50% 45%}
+.story-guizhou .story-copy h2{margin:12px 0 18px}
+.story-guizhou .story-copy p{line-height:1.7;margin:0 0 14px}
+.story-guizhou .story-copy .text-link{margin-top:0}
+.story-guizhou .guizhou-gallery figcaption{padding:40px 20px 20px;padding-right:160px}
+.story-guizhou .guizhou-controls{bottom:12px;right:14px}
+@media(max-width:700px){
+ .annie-story.story-guizhou{gap:20px;margin-block:-10px}
+ .story-guizhou .story-photo{aspect-ratio:3/2;max-height:290px}
+ .story-guizhou .story-copy h2{margin:10px 0 14px}
+ .story-guizhou .guizhou-gallery figcaption{font-size:11px;padding-left:14px;padding-right:145px}
+}
