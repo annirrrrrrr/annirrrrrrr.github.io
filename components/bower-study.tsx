@@ -8,7 +8,7 @@ export default function BowerStudy(){
   <div className="bower-main">
    <div className="bower-copy"><h2 id="bower-title">BOWER<span aria-hidden="true">.</span></h2><h3>Small tasks.<br/>Someone to care for.</h3><p className="bower-lead">A virtual-pet planner that turns everyday tasks into treats for a companion.</p>
     <ul className="bower-skills" aria-label="BOWER skills">{['User research','Journey mapping','Interaction design','Paper prototyping','Figma'].map(s=><li key={s}>{s}</li>)}</ul>
-    <div className="bower-story"><h4>Why a pet?</h4><p>I have a dog, so the idea felt natural. Games like Pokémon and virtual pets give people someone to look after. I wanted to bring that <strong>emotional connection</strong> to completing everyday tasks.</p><h4>From student routines to a product idea.</h4><p>Our group studied the transition to independent living through a survey and interviews with three students. Balancing routines, tasks, and social life became the starting point for my BOWER design.</p></div>
+    <div className="bower-story"><h4>Why a pet?</h4><p>I have a dog, so the idea felt natural. Games like Pokémon and virtual pets give people someone to look after. I wanted to bring that <strong>emotional connection</strong> to completing everyday tasks.</p><h4>From student routines to a product idea.</h4><p>I studied the transition to independent living through a survey and interviews with 69 students. Balancing routines, tasks, and social life became the starting point for my BOWER design.</p></div>
 
    </div>
    <div className="bower-play"><div className="bower-play-label"><span>TRY THE ORIGINAL</span><span>↘</span></div>
