@@ -481,3 +481,24 @@ html{scroll-padding-top:112px}
 .bower-deck-flow{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(220px,.8fr);gap:32px;align-items:center;margin-top:60px}.bower-original-flow{margin:0;overflow:hidden}.bower-original-flow img{width:100%;height:auto;display:block}.bower-wire-notes h3{font-size:26px;line-height:1.15;margin:10px 0}.bower-wire-notes p{font-size:13px;line-height:1.65}.bower-wire-notes>a{font-size:12px}.bower-wire-stack{display:flex;flex-direction:column;gap:8px;margin:18px 0}.bower-wire-stack figure{margin:0}.bower-wire-stack img{width:100%;height:auto;display:block}.bower-wire-stack figcaption{font:9px monospace;color:#ffe1cf;margin:5px 0}.bower-screen-gallery{margin:56px -24px 20px}.bower-gallery-heading{display:flex;justify-content:space-between;gap:15px;padding:0 24px 25px}.bower-gallery-heading>span:last-child{font:italic 19px Georgia,serif;color:#ffe1cf}.bower-screen-row{display:flex;align-items:flex-start;gap:14px;overflow-x:auto;padding:15px 24px 30px;scroll-snap-type:x proximity}.bower-screen-row figure{margin:0;flex:1 0 100px;min-width:0;scroll-snap-align:center;transition:transform .25s}.bower-screen-row figure:nth-child(even){margin-top:22px}.bower-screen-row img{display:block;width:100%;height:auto;filter:drop-shadow(0 12px 9px #6d211a35)}.bower-screen-row figcaption{font-size:10px;color:#ffe1cf;text-align:center;margin-top:12px}.bower-screen-row figure:hover{transform:translateY(-7px)}
 @media(max-width:760px){.bower-deck-flow{grid-template-columns:1fr;gap:25px;margin-top:35px}.bower-wire-notes{display:grid;grid-template-columns:1fr 1.3fr;gap:8px 16px;align-items:start}.bower-wire-notes .bower-meta{grid-column:1/-1}.bower-wire-notes h3{font-size:22px;grid-column:1}.bower-wire-notes p{grid-column:1;font-size:12px;margin:0}.bower-wire-stack{grid-column:2;grid-row:2/5;margin:8px 0}.bower-wire-notes>a{grid-column:1/-1;margin-top:10px}.bower-screen-gallery{margin:35px -20px 15px}.bower-screen-row figure{flex:0 0 128px}.bower-gallery-heading{flex-direction:column}.bower-screen-row{padding:12px 20px 25px}.bower-gallery-heading>span:last-child{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.bower-screen-row figure{transition:none}}
+
+/* Shared project typography and a more compact BOWER prototype. */
+.maglev-workshop .workshop-header h2,.slam-copy h2,.bower-copy h2{font-size:clamp(28px,3.4vw,48px)!important;line-height:1.12;letter-spacing:-.045em}
+.bower-copy h2{margin:0 0 16px!important}
+.bower-copy h3{font-size:25px;line-height:1.2;letter-spacing:-.035em;margin-bottom:12px}
+.bower-copy .bower-lead{font-size:17px;line-height:1.65;margin-bottom:18px}
+.bower-story h4{font-size:15px;margin:18px 0 7px}
+.bower-story p{font-size:14px;line-height:1.75}
+.bower-skills{margin-bottom:20px}
+.bower-main{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:40px}
+.bower-play{max-width:310px;padding-top:0}
+.bower-prototype{width:260px;max-width:100%;height:560px;border-radius:34px}
+.bower-prototype iframe{width:calc(100% + 114px);height:calc(100% + 138px);left:-57px;top:-69px}
+.bower-phone-note{font-size:14px;margin-top:14px}
+.bower-prototype-footer{margin-top:12px}
+.bower-deck-flow{margin-top:28px}
+@media(max-width:760px){
+.maglev-workshop .workshop-header h2,.slam-copy h2,.bower-copy h2{font-size:28px!important}
+.bower-copy h3{font-size:23px}.bower-copy .bower-lead{font-size:16px}
+.bower-main{grid-template-columns:1fr;gap:24px}.bower-deck-flow{margin-top:28px}
+}
