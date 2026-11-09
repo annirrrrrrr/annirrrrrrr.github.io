@@ -197,7 +197,7 @@ function Projects(){
   preference.addEventListener('change',stop);
   return()=>{observer.disconnect();animations.forEach(a=>a.cancel());preference.removeEventListener('change',stop)};
  },[]);
- return <><PixelAnnie/><header className="projects-access wrap"><span className="eyebrow">PROJECTS / EXPLORE</span><h1>Quick access</h1><p>Pick a project. See how it came together.</p><nav className="project-shortcuts" aria-label="Jump to a project">{[
+ return <><PixelAnnie/><header className="projects-access wrap"><span className="eyebrow">PROJECTS / EXPLORE</span><h1>Pick a project. See how it came together.</h1><p>Quick access</p><nav className="project-shortcuts" aria-label="Jump to a project">{[
 {id:'mbot',name:'MBot',image:'/images/mbot.webp',tags:'Robotics · Software · Autonomy'},
 {id:'maglev',name:'MAG-LEV',image:'/images/maglev-assembly-cutout.png',tags:'Hardware · Mechanical · Electronics'},
 {id:'bower',name:'BOWER',image:'/images/bower-screen-1.webp',tags:'UI/UX · App · Product design'},
