@@ -32,7 +32,8 @@ export const annieStories=[
  ],href:'/social-responsibility',link:'More from Guizhou'},
  {id:'work',label:'03 / MARITIME TECHNOLOGY',title:'There has to be an easier way.',image:'/images/dnv.webp?v=16ec9a214a',alt:'Annie holding a certificate with colleagues at DNV',caption:'DNV · Maritime cybersecurity',body:[
  'At DNV, compliance reviews meant searching through the rulebooks of eight classification societies. After a week of repetitive reviews, I proposed putting the requirements into one searchable database.',
- 'I mapped equivalent terms across the rulebooks, organized the requirements, and built the database over two months. Review time went from three hours to forty minutes. Then I wrote a guide so the team could keep using it. I liked finding the problem, but making the fix useful to other people was the satisfying part.'
+ 'I mapped equivalent terms across the rulebooks, organized the requirements, and built the database over two months. Review time went from three hours to forty minutes. Then I wrote a guide so the team could keep using it. I liked finding the problem, but making the fix useful to other people was the satisfying part.',
+ 'I also received DNV’s Certificate of Achievement after completing its Cybersecurity, Marketing and Communications course, recognizing my professionalism, approach to learning, and practical skills.'
  ],href:'/internships',link:'Explore my experience'}
 ];
 export const socialStory={title:'Teentors @ Maocaoping Elementary School',
@@ -87,7 +88,7 @@ export const personalPhotos=[
 ];
 
 export const internships = [
- {id:'dnv',company:'DNV',date:'Jun – Aug 2025',location:'Shanghai, China',role:'Ship Cybersecurity Consulting Intern',team:'Supply Chain & Product Assurance',summary:'Making maritime cybersecurity requirements easier to find, interpret, and use.',contributions:[
+ {id:'dnv',company:'DNV',date:'Jun – Aug 2025',location:'Shanghai, China',role:'Ship Cybersecurity Consulting Intern',team:'Supply Chain & Product Assurance',summary:'Making maritime cybersecurity requirements easier to find, interpret, and use.',award:{title:'Certificate of Achievement',date:'30 July 2025',description:'Received DNV’s Certificate of Achievement upon completing the Cybersecurity, Marketing and Communications course, with recognition for professionalism, a rigorous approach to learning, and practical skills.',image:'/images/dnv-certificate.webp'},contributions:[
  {title:'A usable compliance reference',text:'Built an Excel-based database bringing together requirements from eight maritime regulators. Mapped equivalent terminology across rulebooks so the team could find the relevant requirements in one place.'},
  {title:'A faster review process',text:'Reduced compliance review time from about three hours to forty minutes. Wrote a 40-page guide interpreting more than 350 pages of requirements so colleagues could continue using the database.'},
  {title:'From regulations to conversations',text:'Wrote four technical compliance articles for shipowners and helped organize a co-hosted seminar with more than 100 attendees.'}

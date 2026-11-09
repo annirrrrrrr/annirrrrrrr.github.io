@@ -448,3 +448,7 @@ html{scroll-padding-top:112px}
 
 .slam-report>section:first-child{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}
 @media(max-width:1000px){.slam-report>section:first-child{grid-template-columns:1fr}}
+
+.internship-award{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:36px;margin:28px 0;padding:28px;border:1px solid var(--line);border-radius:16px;background:#f5f9fb}
+.internship-award h4{font-size:25px;margin:14px 0}.internship-award p{font-size:15px;line-height:1.8}.internship-award .eyebrow{font-size:11px}.internship-award img{display:block;width:100%;height:auto;border-radius:4px}.internship-award .text-link{font-size:14px}
+@media(max-width:700px){.internship-award{grid-template-columns:1fr;padding:20px;gap:24px}}
