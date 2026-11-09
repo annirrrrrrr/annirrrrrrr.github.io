@@ -847,3 +847,6 @@ html{scroll-padding-top:112px}
 .shortcut-keywords{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:350px;font-size:14px;line-height:1.3}
 .shortcut-keywords>span{padding:6px 10px;background:#eef8fb;border:1px solid #bedbe5;border-radius:999px;color:#174961;font-weight:600;box-shadow:0 2px 5px #00274c05}
 @media(max-width:700px){.projects-access h1{font-size:clamp(24px,5.8vw,36px)}.shortcut-portrait{width:clamp(120px,33vw,160px);height:clamp(120px,33vw,160px)}.shortcut-keywords{font-size:12px;gap:4px;max-width:190px}.shortcut-keywords>span{padding:5px 7px}.project-shortcuts{gap:24px 12px}.projects-access::before{inset:0 -2%}}
+/* Full-width directory background; keep its content on the existing grid. */
+.projects-access.wrap{max-width:none;width:100%;padding-left:max(6.667%,calc((100% - 1180px)/2 + 6.667%));padding-right:max(6.667%,calc((100% - 1180px)/2 + 6.667%))}
+.projects-access::before{inset:0 0 -12px;border-radius:0}
