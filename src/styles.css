@@ -433,3 +433,15 @@ html{scroll-padding-top:112px}
 .slam-detailed .slam-report p,.slam-detailed .slam-results p{font-size:14px}
 }
 .slam-detailed .eyebrow{color:#9fc5d0}
+
+/* Algorithm notes sit beside the contribution they explain. */
+.slam-method{margin:-3px 0 26px;padding:13px 16px;border-left:2px solid #82c7c3;background:linear-gradient(90deg,#8acbc50b,transparent);border-radius:0 5px 5px 0}
+.slam-method>span{display:block;font-family:monospace;font-size:10px;letter-spacing:.08em;color:#a9e3df;line-height:1.6;margin-bottom:7px}
+.slam-detailed .slam-report .slam-method p{font-size:13px;line-height:1.75;margin:0;color:#b9cbd6}
+.slam-detailed .slam-report .slam-method .slam-method-note{font-size:12px;margin-top:9px;color:#91a9b8}
+
+.slam-report{grid-template-columns:1fr;gap:24px}
+.slam-report>section:first-child{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.slam-report>section:first-child>.eyebrow,.slam-report>section:first-child>h3{grid-column:1/-1}
+.slam-method-group{min-width:0}
+@media(max-width:700px){.slam-report>section:first-child{grid-template-columns:1fr}}
