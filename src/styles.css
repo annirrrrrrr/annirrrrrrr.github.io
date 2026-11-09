@@ -502,3 +502,6 @@ html{scroll-padding-top:112px}
 .bower-copy h3{font-size:23px}.bower-copy .bower-lead{font-size:16px}
 .bower-main{grid-template-columns:1fr;gap:24px}.bower-deck-flow{margin-top:28px}
 }
+
+.bower-study .bower-end{background:#852b25;color:#fff;padding:18px 20px!important;border-top:1px solid #ffffff66;border-radius:12px;font-size:13px;line-height:1.65}
+.bower-study .bower-end span,.bower-study .bower-end strong,.bower-study .bower-end a{color:#fff;opacity:1}
