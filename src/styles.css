@@ -564,3 +564,8 @@ html{scroll-padding-top:112px}
 /* Compact, unboxed project closing line. */
 .bower-study{padding-bottom:24px!important}
 .bower-study .bower-end{margin-top:10px!important}
+
+/* Michigan affiliation on the research page. */
+.research-um-logo{position:absolute;top:32px;left:32px;z-index:21;display:block;width:52px;height:52px}
+.research-um-logo img{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:960px){.research-um-logo{position:relative;top:auto;left:auto;margin:0 0 12px 24px;width:42px;height:42px}}
