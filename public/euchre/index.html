@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a19">
+  <meta name="description" content="Play a quick game of Euchre against three computer players.">
+  <title>Euchre · Annie Zhu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js" defer></script>
+  <script src="ui.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div class="brand"><span class="logo" aria-hidden="true">♠</span><span>ANNIE ZHU <b>/</b> GAME ROOM</span></div>
+      <nav aria-label="Game controls">
+        <button id="help" class="quiet" type="button">How to play</button>
+        <button id="restart" class="quiet" type="button">Restart</button>
+      </nav>
+    </header>
+    <div class="intro">
+      <div><p class="eyebrow">THE CARD TABLE <span> / </span> 01</p><h1>Euchre<span>.</span></h1></div>
+      <p class="intro-note">Four seats. Two teams.<br>First to 10 points wins.</p>
+    </div>
+    <section id="game" aria-label="Euchre game"></section>
+  </main>
+  <dialog id="rules" aria-labelledby="rules-title">
+    <p class="eyebrow">QUICK GUIDE</p>
+    <h2 id="rules-title">How to play</h2>
+    <ol>
+      <li><strong>Pick trump.</strong> Order up the face-up suit or pass. If everyone passes, pick any other suit. The dealer must choose if bidding reaches them again. In round one the dealer takes the upcard and discards one card.</li>
+      <li><strong>Play five tricks.</strong> Follow the suit led when you can. The highest trump wins, or the highest card of the suit led if no trump was played. The trump jack is highest, followed by the same-color jack, which counts as trump.</li>
+      <li><strong>Play with Nova.</strong> Your partner sits opposite you. The team that called trump earns 1 point for taking three or four tricks and 2 for all five. If they lose the hand, the other team earns 2.</li>
+    </ol>
+    <form method="dialog"><button class="primary">Back to the table</button></form>
+  </dialog>
+  <dialog id="reset-dialog" aria-labelledby="reset-title">
+    <h2 id="reset-title">Restart the match?</h2>
+    <p>Both scores will reset and you’ll get a fresh deal.</p>
+    <form method="dialog" class="actions">
+      <button value="cancel" class="quiet" autofocus>Keep playing</button>
+      <button value="restart" class="primary">Restart match</button>
+    </form>
+  </dialog>
+</body>
+</html>
