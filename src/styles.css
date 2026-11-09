@@ -503,7 +503,7 @@ html{scroll-padding-top:112px}
 .bower-main{grid-template-columns:1fr;gap:24px}.bower-deck-flow{margin-top:28px}
 }
 
-.bower-study .bower-end{background:#852b25;color:#fff;padding:18px 20px!important;border-top:1px solid #ffffff66;border-radius:12px;font-size:13px;line-height:1.65}
+.bower-study .bower-end{background:transparent;color:#fff;padding:0!important;border:0;border-radius:0;font-size:13px;line-height:1.65}
 .bower-study .bower-end span,.bower-study .bower-end strong,.bower-study .bower-end a{color:#fff;opacity:1}
 
 /* Independent columns keep the deck directly below the story, not below the phone. */
@@ -560,3 +560,7 @@ html{scroll-padding-top:112px}
 .bower-play-label{max-width:220px;margin:0 auto 12px;font-size:10px;letter-spacing:1.5px}
 .bower-play-label a{font-size:22px;line-height:1;letter-spacing:0}
 .bower-treat-float{right:0;top:100px;font-size:12px;padding:8px 12px}
+
+/* Compact, unboxed project closing line. */
+.bower-study{padding-bottom:24px!important}
+.bower-study .bower-end{margin-top:10px!important}
