@@ -445,3 +445,6 @@ html{scroll-padding-top:112px}
 .slam-report>section:first-child>.eyebrow,.slam-report>section:first-child>h3{grid-column:1/-1}
 .slam-method-group{min-width:0}
 @media(max-width:700px){.slam-report>section:first-child{grid-template-columns:1fr}}
+
+.slam-report>section:first-child{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}
+@media(max-width:1000px){.slam-report>section:first-child{grid-template-columns:1fr}}
