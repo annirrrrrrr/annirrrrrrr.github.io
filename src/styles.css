@@ -539,3 +539,18 @@ html{scroll-padding-top:112px}
 .research-list.research-direct .accent-line{width:52px;margin-bottom:24px}
 .research-list.research-direct .text-link{font-size:16px}
 @media(max-width:760px){.bower-main{grid-template-columns:1fr}.bower-integrated-flow{grid-template-columns:1fr;gap:24px}.bower-step-screens{gap:10px}.bower-step-screens h3{font-size:18px}.bower-integrated-flow .bower-wire-notes{display:block}.research-list.research-direct{padding-top:0;padding-left:24px;padding-right:24px}.research-list.research-direct article{grid-template-columns:1fr;gap:22px;padding:28px 0}.research-list.research-direct h2{font-size:25px}.research-list.research-direct p{font-size:16px}}
+
+/* A compact floating strip keeps the final interfaces secondary to the story. */
+.bower-screen-gallery{margin:20px 0 8px}
+.bower-gallery-heading{padding:0 0 12px}
+.bower-gallery-heading>span:last-child{font-size:16px}
+.bower-screen-row{max-width:780px;margin:0 auto;gap:12px;padding:8px 4px 14px}
+.bower-screen-row figure{flex:1 1 0;min-width:0}
+.bower-screen-row figure:nth-child(even){margin-top:14px}
+.bower-screen-row figcaption{font-size:9px;line-height:1.4;margin-top:8px}
+.bower-study .bower-end{margin-top:16px!important}
+@media(max-width:760px){
+.bower-screen-row{gap:10px;padding-bottom:12px}
+.bower-screen-row figure{flex:0 0 96px}
+.bower-gallery-heading{gap:6px}
+}
