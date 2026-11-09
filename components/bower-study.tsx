@@ -1,17 +1,17 @@
 import {useState} from 'react';
 
 const prototype='https://www.figma.com/proto/7DpQeHzEFvIAbXdxteypcz/BOWER---Final-Prototype?node-id=1-1110&starting-point-node-id=1%3A1110&scaling=scale-down&content-scaling=fixed';
-const embed='https://embed.figma.com/proto/7DpQeHzEFvIAbXdxteypcz/BOWER---Final-Prototype?node-id=1-1110&starting-point-node-id=1%3A1110&scaling=scale-down&content-scaling=fixed&embed-host=share';
+const embed='https://embed.figma.com/proto/7DpQeHzEFvIAbXdxteypcz/BOWER---Final-Prototype?node-id=1-1110&starting-point-node-id=1%3A1110&scaling=scale-down&content-scaling=fixed&embed-host=share&hide-ui=1';
 const iterations=[
  {label:'First wireframe',image:'/images/bower-wireframe-before.webp',title:'Start with the interaction.',text:'I mapped the journey from setting a task to tracking it and collecting a reward, then used paper prototypes to ask whether the sequence felt clear and the pet felt engaging.'},
  {label:'After paper testing',image:'/images/bower-wireframe-after.webp',title:'Make the reward easier to understand.',text:'Feedback led me to reorder the flow, add a leaderboard, and simplify rewards into one currency: treats. The next wireframe carried those changes into the interface.'},
  {label:'Final interface',image:'/images/bower-4.webp',title:'Give progress a personality.',text:'The final Figma prototype connects task creation, a countdown, pet rewards, and progress views. It demonstrates the experience; longer-term effects on motivation still need testing.'}
 ];
 export default function BowerStudy(){
- const [active,setActive]=useState(0);const [live,setLive]=useState(false);
+ const [active,setActive]=useState(0);
  const step=iterations[active];
  return <article id="bower" className="bower-study project-study" aria-labelledby="bower-title">
-  <div className="bower-orbit" aria-hidden="true"/>
+  <div className="bower-orbit" aria-hidden="true"/><svg className="bower-bone" viewBox="0 0 140 70" aria-hidden="true"><path d="M30 22C8-5-10 27 15 35-10 43 8 75 30 48h80c22 27 40-5 15-13 25-8 7-40-15-13Z" fill="currentColor"/></svg>
   <header className="bower-header"><span className="bower-meta">FALL 2024 · EXPERIENCE & INTERACTION · LONDON</span><span className="bower-edition">A companion for the everyday.</span></header>
   <div className="bower-main">
    <div className="bower-copy"><h2 id="bower-title">BOWER<span aria-hidden="true">.</span></h2><h3>Small tasks.<br/>Someone to care for.</h3><p className="bower-lead">A virtual-pet planner that turns everyday tasks into treats for a companion.</p>
@@ -20,9 +20,7 @@ export default function BowerStudy(){
     <div className="bower-loop" aria-label="Core experience"><div><b>01</b><strong>Set</strong><span>Create a task.</span></div><span aria-hidden="true">→</span><div><b>02</b><strong>Track</strong><span>See your progress.</span></div><span aria-hidden="true">→</span><div><b>03</b><strong>Treat</strong><span>Reward your pet.</span></div></div>
    </div>
    <div className="bower-play"><div className="bower-play-label"><span>TRY THE ORIGINAL</span><span>↘</span></div>
-    <div className={'bower-prototype '+(live?'is-live':'')}>
-     {live?<iframe title="BOWER interactive Figma prototype" src={embed} allowFullScreen/>:<button className="bower-launch" onClick={()=>setLive(true)}><img src="/images/bower-2.webp" alt="BOWER original app screens"/><span className="bower-launch-cta"><span aria-hidden="true">▶</span> Play prototype</span></button>}
-    </div>
+    <div className="bower-phone-stage"><span className="bower-treat-float" aria-hidden="true">+1 treat ♡</span><div className="bower-prototype is-live"><iframe title="BOWER interactive Figma prototype" src={embed} loading="lazy" allowFullScreen/></div><span className="bower-phone-note">a little motivation, on your screen.</span></div>
     <div className="bower-prototype-footer"><span>Figma prototype · Click through the app</span><a href={prototype} target="_blank" rel="noreferrer">Open full screen ↗</a></div>
     <p className="bower-play-hint">Try setting a task, tracking it, and collecting a treat. If the embed asks you to sign in, open the prototype in Figma.</p>
    </div>
