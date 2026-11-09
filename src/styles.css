@@ -483,7 +483,7 @@ html{scroll-padding-top:112px}
 @media(prefers-reduced-motion:reduce){.bower-screen-row figure{transition:none}}
 
 /* Shared project typography and a more compact BOWER prototype. */
-.maglev-workshop .workshop-header h2,.slam-copy h2,.bower-copy h2{font-size:clamp(28px,3.4vw,48px)!important;line-height:1.12;letter-spacing:-.045em}
+.study-heading h2,.maglev-workshop .workshop-header h2,.slam-copy h2,.bower-copy h2{font-size:clamp(28px,3.4vw,48px)!important;line-height:1.12;letter-spacing:-.045em}
 .bower-copy h2{margin:0 0 16px!important}
 .bower-copy h3{font-size:25px;line-height:1.2;letter-spacing:-.035em;margin-bottom:12px}
 .bower-copy .bower-lead{font-size:17px;line-height:1.65;margin-bottom:18px}
@@ -498,7 +498,7 @@ html{scroll-padding-top:112px}
 .bower-prototype-footer{margin-top:12px}
 .bower-deck-flow{margin-top:28px}
 @media(max-width:760px){
-.maglev-workshop .workshop-header h2,.slam-copy h2,.bower-copy h2{font-size:28px!important}
+.study-heading h2,.maglev-workshop .workshop-header h2,.slam-copy h2,.bower-copy h2{font-size:28px!important}
 .bower-copy h3{font-size:23px}.bower-copy .bower-lead{font-size:16px}
 .bower-main{grid-template-columns:1fr;gap:24px}.bower-deck-flow{margin-top:28px}
 }
