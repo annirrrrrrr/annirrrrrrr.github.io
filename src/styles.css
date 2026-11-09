@@ -709,3 +709,33 @@ html{scroll-padding-top:112px}
 .selected-build-card h3 .arrow-icon{float:right}
 #gong-research{scroll-margin-top:110px}
 @media(max-width:700px){.selected-builds-grid{grid-template-columns:1fr}.selected-build-card{grid-template-columns:36% 1fr}.selected-build-card>img{height:100%;min-height:155px}.selected-build-card>div{padding:18px}#gong-research{scroll-margin-top:88px}}
+
+/* Compact editorial entrances and personal introduction. */
+.selected-builds{padding-top:32px;padding-bottom:0}
+.selected-builds-grid{gap:28px}
+.selected-build-card{border:0;border-radius:0;background:transparent;overflow:visible;box-shadow:none}
+.selected-build-card>img{height:170px;border-radius:10px;background:linear-gradient(135deg,#eaf3f7,#f3f7fa);transition:transform .25s ease}
+.selected-build-card>div{padding:14px 0 0}
+.selected-build-card h3{font-size:20px;margin-bottom:6px;font-weight:600}
+.selected-build-card p{font-size:13px;line-height:1.5;max-width:36ch}
+.selected-build-card:hover{transform:translateY(-3px);box-shadow:none}
+.selected-build-card:hover h3{color:#177e97}
+.selected-build-card:focus-visible{outline:2px solid #177e97;outline-offset:7px;border-radius:10px}
+.story-opening{display:grid;grid-template-columns:150px 1fr;align-items:baseline;gap:24px;padding-top:48px;padding-bottom:38px}
+.story-opening h2{font-size:clamp(30px,3.2vw,46px);line-height:1.2;max-width:none;margin:0;letter-spacing:-.035em}
+.story-opening h2 br{display:none}
+.story-opening em{color:#267b8d;margin-left:.2em;white-space:nowrap}
+.story-opening>.eyebrow{font-size:11px}
+@media(max-width:700px){
+.selected-builds{padding-top:26px}
+.selected-builds-grid{gap:20px}
+.selected-build-card{grid-template-columns:32% 1fr;gap:16px;align-items:center}
+.selected-build-card>img{height:108px;min-height:0;border-radius:8px}
+.selected-build-card>div{padding:0;align-self:center}
+.selected-build-card h3{font-size:18px}
+.selected-build-card p{font-size:12px;line-height:1.45}
+.story-opening{grid-template-columns:1fr;gap:12px;padding-top:32px;padding-bottom:28px}
+.story-opening h2{font-size:30px;line-height:1.25}
+.story-opening em{white-space:normal}
+}
+@media(prefers-reduced-motion:reduce){.selected-build-card,.selected-build-card>img{transition:none}}
