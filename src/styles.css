@@ -678,3 +678,7 @@ html{scroll-padding-top:112px}
  .hero .personal-links>div{display:flex;flex-wrap:wrap;gap:10px}
  .hero .personal-links .pill{font-size:14px;min-height:46px;background:rgba(255,255,255,.16);border:1px solid #ffffffcc;color:#fff;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 }
+
+/* Sparse research particles occupy only the margins and gaps. */
+.research-page{position:relative;isolation:isolate}
+.research-particles{position:absolute;inset:0;width:100%;pointer-events:none;z-index:-1}
