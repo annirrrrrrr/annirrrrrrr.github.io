@@ -595,7 +595,7 @@ html{scroll-padding-top:112px}
 @media(prefers-reduced-motion:reduce){.garbo-model-gallery img{transition:none}}
 
 /* GarboGenius: charcoal studio backdrop for the white concept models. */
-.garbo-study{background:radial-gradient(ellipse at 60% 30%,#292c30 0%,#17191c 48%,#101214 100%)!important;color:#f3f4f5;border-color:#383c41!important;color-scheme:dark}
+.garbo-study{background:radial-gradient(circle, #cad8e126 1px, transparent 1.2px) 0 0 / 22px 22px, radial-gradient(ellipse at 60% 30%,#292c30 0%,#17191c 48%,#101214 100%)!important;color:#f3f4f5;border-color:#383c41!important;color-scheme:dark}
 .garbo-heading h2,.garbo-study h3,.garbo-study h4,.garbo-study strong{color:#f5f6f7}
 .garbo-study p,.garbo-heading>p{color:#c5cbd1}
 .garbo-study .eyebrow,.garbo-concept,.garbo-loop>span{color:#a6b6c2}
