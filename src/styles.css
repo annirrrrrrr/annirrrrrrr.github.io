@@ -888,3 +888,33 @@ html{scroll-padding-top:112px}
 .project-shortcut:hover .shortcut-cards{transform:scale(1.2) translateY(3%)}
 .cover-phone,.shortcut-cards{transition:transform .25s ease}
 @media(prefers-reduced-motion:reduce){.cover-phone,.shortcut-cards{transition:none}}
+
+/* Project-specific material layers: mapping coordinates and card-table felt. */
+.slam-study.slam-detailed {
+  background-color:#14242f;
+  background-image:linear-gradient(90deg,#14242fba,transparent 75%),linear-gradient(#83cbd512 1px,transparent 1px),linear-gradient(90deg,#83cbd512 1px,transparent 1px);
+  background-size:100% 100%,32px 32px,32px 32px;
+}
+.slam-hero:before {
+  content:'';position:absolute;right:2%;top:12%;width:51%;height:72%;pointer-events:none;z-index:0;
+  background-image:radial-gradient(circle,#8ce9df80 1px,transparent 1.8px),linear-gradient(90deg,transparent 49.7%,#84ddd82b 50%,transparent 50.3%);
+  background-size:23px 29px,100% 100%;
+  mask-image:linear-gradient(90deg,transparent,black 45%);opacity:.55;
+}
+.project-study.euchre-study {
+  position:relative;isolation:isolate;overflow:hidden;
+  background-color:#102b22;
+  background-image:repeating-linear-gradient(31deg,#ffffff04 0 1px,transparent 1px 4px),repeating-linear-gradient(121deg,#00000012 0 1px,transparent 1px 5px),radial-gradient(ellipse at 75% 15%,#315744,#10271f 75%);
+}
+.euchre-study:before {
+  content:'';position:absolute;inset:16px;border:1px solid #d6bd7338;border-radius:22px;pointer-events:none;z-index:-1;
+}
+.euchre-study:after {
+  content:'♠   ♥   ♣   ♦';position:absolute;right:4%;top:40%;font:100px Georgia;letter-spacing:22px;color:#d7c8940c;transform:rotate(-18deg);pointer-events:none;z-index:-1;
+}
+@media(max-width:700px){
+  .slam-study.slam-detailed{background-size:100% 100%,24px 24px,24px 24px}
+  .slam-hero:before{top:auto;bottom:100px;width:95%;height:300px}
+  .euchre-study:before{inset:8px;border-radius:12px}
+  .euchre-study:after{font-size:65px;letter-spacing:8px;right:0}
+}
