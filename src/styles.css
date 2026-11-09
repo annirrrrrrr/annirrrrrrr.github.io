@@ -682,3 +682,12 @@ html{scroll-padding-top:112px}
 /* Sparse research particles occupy only the margins and gaps. */
 .research-page{position:relative;isolation:isolate}
 .research-particles{position:absolute;inset:0;width:100%;pointer-events:none;z-index:-1}
+
+/* Research: luminous margins and fine orbital marks. */
+.research-page{background:radial-gradient(ellipse at 0% 18%,#d5eef780,transparent 38%),radial-gradient(ellipse at 100% 65%,#dce6fa85,transparent 38%),#fff}
+.research-page::before{content:"";position:absolute;pointer-events:none;z-index:-1;top:110px;right:2%;width:240px;height:240px;border:1px solid #83abc13d;border-radius:50%;box-shadow:0 0 0 24px #83abc10a,0 0 0 25px #83abc125,0 0 0 52px #83abc108,0 0 0 53px #83abc11a}
+.research-list.research-direct article{position:relative}
+.research-list.research-direct article+article::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,#6b9eae70,#a9c5df45,transparent)}
+.research-list.research-direct .research-keywords li{background:#eaf3f9b3;border-color:#bbd2df;color:#315c70}
+.research-list.research-direct .accent-line{width:64px;height:3px;background:linear-gradient(90deg,#458eac,#a7c5eb);border-radius:2px}
+@media(max-width:700px){.research-page::before{width:120px;height:120px;top:100px;right:12%;opacity:.55}}

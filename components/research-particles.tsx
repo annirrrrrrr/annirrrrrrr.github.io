@@ -19,7 +19,7 @@ export default function ResearchParticles(){
     if(Math.abs(tx-d.dx)+Math.abs(ty-d.dy)>.08)moving=true;
     const x=d.x+d.dx,y=d.y+d.dy;
     if(masks.some(b=>x>b.left&&x<b.right&&y>b.top&&y<b.bottom))continue;
-    ctx!.beginPath();ctx!.arc(x,y,d.r,0,Math.PI*2);ctx!.fillStyle='rgba(96,143,160,.24)';ctx!.fill();
+    ctx!.beginPath();ctx!.arc(x,y,d.r,0,Math.PI*2);ctx!.fillStyle='rgba(66,123,149,.48)';ctx!.fill();
    }
    if(moving&&interactive()&&!document.hidden)raf=requestAnimationFrame(draw);
   }
@@ -27,8 +27,8 @@ export default function ResearchParticles(){
   function resize(){
    const rect=host.getBoundingClientRect();width=host.clientWidth;height=host.scrollHeight;
    const scale=Math.min(devicePixelRatio||1,2);canvas.width=width*scale;canvas.height=height*scale;canvas.style.height=height+'px';ctx!.setTransform(scale,0,0,scale,0,0);
-   masks=Array.from(host.querySelectorAll('.research-direct article,.research-um-logo')).map(el=>{const r=el.getBoundingClientRect();return {left:r.left-rect.left-12,top:r.top-rect.top-12,right:r.right-rect.left+12,bottom:r.bottom-rect.top+12}});
-   dots=[];for(let y=14;y<height;y+=24)for(let x=12;x<width;x+=25){const seed=Math.sin(x*12.9898+y*78.233)*43758.5453;const n=seed-Math.floor(seed);if(n>.56)dots.push({x:x+n*16,y:y+n*12,dx:0,dy:0,r:.65+n*.65})}schedule();
+   masks=Array.from(host.querySelectorAll('.research-direct article>div,.research-um-logo')).map(el=>{const r=el.getBoundingClientRect();return {left:r.left-rect.left-12,top:r.top-rect.top-12,right:r.right-rect.left+12,bottom:r.bottom-rect.top+12}});
+   dots=[];for(let y=14;y<height;y+=24)for(let x=12;x<width;x+=25){const seed=Math.sin(x*12.9898+y*78.233)*43758.5453;const n=seed-Math.floor(seed);if(n>.38)dots.push({x:x+n*16,y:y+n*12,dx:0,dy:0,r:.9+n*.85})}schedule();
   }
   function move(e:PointerEvent){if(!interactive())return;const r=host.getBoundingClientRect();mouse={x:e.clientX-r.left,y:e.clientY-r.top};schedule()}
   function leave(){mouse={x:-1000,y:-1000};schedule()}
