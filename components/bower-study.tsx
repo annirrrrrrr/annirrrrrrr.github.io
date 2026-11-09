@@ -11,10 +11,10 @@ export default function BowerStudy(){
     <div className="bower-story"><h4>Why a pet?</h4><p>I have a dog, so the idea felt natural. Games like Pokémon and virtual pets give people someone to look after. I wanted to bring that <strong>emotional connection</strong> to completing everyday tasks.</p><h4>From student routines to a product idea.</h4><p>I studied the transition to independent living through a survey and interviews with 69 students. Balancing routines, tasks, and social life became the starting point for my BOWER design.</p></div>
 
    </div>
-   <div className="bower-play"><div className="bower-play-label"><span>TRY THE ORIGINAL</span><span>↘</span></div>
+   <div className="bower-play"><div className="bower-play-label"><span>TRY THE ORIGINAL</span><a href={prototype} target="_blank" rel="noreferrer" aria-label="Open BOWER prototype full screen">↗</a></div>
     <div className="bower-phone-stage"><span className="bower-treat-float" aria-hidden="true">+1 treat ♡</span><div className="bower-prototype is-live"><iframe title="BOWER interactive Figma prototype" src={embed} loading="lazy" allowFullScreen/></div><span className="bower-phone-note">a little motivation, on your screen.</span></div>
-    <div className="bower-prototype-footer"><span>Figma prototype · Click through the app</span><a href={prototype} target="_blank" rel="noreferrer">Open full screen ↗</a></div>
-    <p className="bower-play-hint">Set a task, track it, and collect a treat.</p>
+    
+    
 
    </div>
   </div>
