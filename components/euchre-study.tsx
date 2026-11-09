@@ -35,12 +35,13 @@ export default function EuchreStudy() {
 
  return <article id="euchre" className="project-study euchre-study" aria-labelledby="euchre-title">
   <header className="study-heading">
-   <span className="eyebrow">05 / EECS 280</span>
-   <h2 id="euchre-title">Euchre</h2>
+   <div className="course-mark"><img src="/images/umich-logo.png" alt="University of Michigan"/><span className="eyebrow">EECS 280 · UNIVERSITY OF MICHIGAN</span></div>
+   <div className="euchre-intro-layout"><div className="euchre-intro-copy"><h2 id="euchre-title">Euchre</h2>
    <ul className="study-tags" aria-label="Project topics"><li>C++ · OOP</li><li>Abstract data types</li><li>Inheritance & polymorphism</li><li>Virtual functions</li><li>JavaScript</li></ul>
-   <p>I built a C++ version of Euchre for EECS 280 and brought its rules and computer-player strategy into the browser. Play with Nova against two computer opponents in a race to 10 points.</p>
+   <p>Euchre is a card game popular in Michigan. I built the original game in <strong>C++ for EECS 280</strong>, then took it a step further outside class: using <strong>vibe coding to develop the UI and launch a playable web version</strong>.</p>
    <a className="text-link" href={gameUrl} target="_blank" rel="noopener noreferrer">Play Euchre <ArrowIcon direction="up-right"/></a>
    <a className="text-link euchre-source" href="https://github.com/annirrrrrrr/p3-euchre" target="_blank" rel="noopener noreferrer">C++ source on GitHub <ArrowIcon direction="up-right"/></a>
+   </div><a className="euchre-table-invite" href={gameUrl} target="_blank" rel="noopener noreferrer" aria-label="Play Euchre in a new tab"><span className="euchre-table-cards" aria-hidden="true"><i>A<span>♠</span></i><i>J<span>♥</span></i><i>K<span>♣</span></i></span><strong>Take a seat.</strong><span>Play a hand <ArrowIcon direction="up-right"/></span></a></div>
    <div className="euchre-engineering">
     <section><h3>Model the game</h3><p><strong>Card and Pack abstractions</strong> organize the deck and context-dependent card ordering. A shared <strong>Player interface</strong> uses inheritance and virtual functions to support human input and a rule-based computer strategy.</p></section>
     <section><h3>Handle the edge cases</h3><p>Implemented <strong>trump selection, dealer pickup, trick resolution, and scoring</strong>—including the left bower, whose effective suit changes with trump. Unit tests and full-game transcript comparisons check the behavior.</p></section>

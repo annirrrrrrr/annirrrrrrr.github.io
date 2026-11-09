@@ -790,3 +790,49 @@ html{scroll-padding-top:112px}
 
 .euchre-study .euchre-source{margin-left:24px}
 @media(max-width:700px){.euchre-study .euchre-source{margin-left:0;display:flex;width:max-content}}
+
+/* Compact project index, followed by the existing project studies. */
+.projects-access{padding-top:32px;padding-bottom:48px;max-width:1180px;text-align:center}
+.projects-access h1{font-size:clamp(32px,4vw,50px);margin:12px 0;color:#00274c}
+.projects-access>p{font-size:14px;margin-bottom:28px}
+.project-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 36px}
+.project-shortcut{display:flex;flex-direction:column;align-items:center;gap:9px;min-width:0;border-radius:16px}
+.shortcut-portrait{position:relative;display:block;width:clamp(110px,12vw,164px);aspect-ratio:1;border-radius:50%;background:#e9f2f6;box-shadow:0 5px 18px #00274c12;transition:transform .25s,box-shadow .25s}
+.shortcut-portrait>img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+.shortcut-maglev .shortcut-portrait{background:#f2edda}
+.shortcut-maglev img{object-fit:contain;padding:6px}
+.shortcut-bower .shortcut-portrait{background:#f43135}
+.shortcut-bower img{object-fit:cover;object-position:center 48%}
+.shortcut-garbogenius .shortcut-portrait{background:#172022}
+.shortcut-garbogenius img{object-fit:contain;padding:4px}
+.shortcut-euchre .shortcut-portrait{background:radial-gradient(circle,#315e45,#132c21);overflow:hidden}
+.shortcut-go{position:absolute;right:0;bottom:5px;width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:#00274c;color:white;border:3px solid white}
+.project-shortcut strong{font-size:17px;font-weight:600;color:#00274c}
+.shortcut-keywords{font-size:11px;line-height:1.5;color:#426f80}
+.project-shortcut:hover .shortcut-portrait,.project-shortcut:focus-visible .shortcut-portrait{transform:translateY(-5px);box-shadow:0 12px 24px #00274c22}
+.shortcut-cards{display:flex;justify-content:center;align-items:center;height:100%;padding-left:13px}
+.shortcut-cards>span{width:54px;height:78px;padding:9px 5px;background:#fffbee;border-radius:6px;box-shadow:0 2px 9px #0005;color:#172822;font:600 22px Georgia;transform:rotate(-15deg)}
+.shortcut-cards>span+span{color:#b73338;margin-left:-18px;transform:rotate(15deg) translateY(4px)}
+.stack-gallery-label{display:flex;align-items:center;justify-content:space-between;margin:0 0 25px;gap:15px}
+.stack-gallery-label h2{font-size:22px;color:#00274c;letter-spacing:-.02em}
+.stack-gallery-label>span{display:flex;align-items:center;gap:12px;font-size:11px;color:#426f80}
+#mbot,#maglev,#bower,#garbogenius,#euchre{scroll-margin-top:112px}
+@media(max-width:700px){.projects-access{padding-top:25px;padding-bottom:32px}.project-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 14px}.shortcut-portrait{width:112px}.shortcut-keywords{font-size:10px;max-width:155px}.project-shortcut strong{font-size:15px}.stack-gallery-label h2{font-size:20px}#mbot,#maglev,#bower,#garbogenius,#euchre{scroll-margin-top:96px}}
+@media(prefers-reduced-motion:reduce){.shortcut-portrait{transition:none}.project-shortcut:hover .shortcut-portrait{transform:none}}
+
+.course-mark{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.course-mark img{width:42px;height:42px;object-fit:contain;flex-shrink:0}
+.course-mark .eyebrow{margin:0}
+.euchre-intro-layout{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:36px;align-items:center}
+.euchre-intro-copy{min-width:0}
+.euchre-table-invite{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:235px;background:radial-gradient(ellipse,#345c4055,transparent 70%);border-radius:24px;transition:translate .25s}
+.euchre-table-invite:hover{translate:0 -5px}
+.euchre-table-invite>strong{font-size:22px;font-weight:500}
+.euchre-table-invite>span:last-child{font-size:12px;display:flex;align-items:center;gap:8px;color:#c9fb87}
+.euchre-table-cards{display:flex;align-items:center;justify-content:center;height:130px;padding-right:12px}
+.euchre-table-cards i{display:flex;flex-direction:column;align-items:flex-start;background:#fffbed;color:#182b22;width:66px;height:96px;padding:8px;font:24px Georgia;border-radius:7px;box-shadow:0 6px 12px #0004;transform:rotate(-20deg)}
+.euchre-table-cards i span{align-self:center;font-size:36px}
+.euchre-table-cards i+i{margin-left:-20px;transform:translateY(-12px);color:#b83237}
+.euchre-table-cards i+i+i{transform:rotate(20deg);color:#182b22}
+@media(max-width:700px){.euchre-intro-layout{grid-template-columns:1fr;gap:12px}.euchre-table-invite{min-height:160px;gap:5px}.euchre-table-cards{height:110px}.course-mark img{width:34px;height:34px}.course-mark .eyebrow{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.euchre-table-invite{transition:none}.euchre-table-invite:hover{translate:none}}
