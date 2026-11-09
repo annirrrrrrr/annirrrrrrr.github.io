@@ -850,3 +850,6 @@ html{scroll-padding-top:112px}
 /* Full-width directory background; keep its content on the existing grid. */
 .projects-access.wrap{max-width:none;width:100%;padding-left:max(6.667%,calc((100% - 1180px)/2 + 6.667%));padding-right:max(6.667%,calc((100% - 1180px)/2 + 6.667%))}
 .projects-access::before{inset:0 0 -12px;border-radius:0}
+
+/* Paint selection on the link itself: stable before fonts/layout finish loading. */
+.site-header .nav-inner a[aria-current="page"]{background:var(--primary);box-shadow:inset 0 1px 0 #ffffff1f;color:#fff}
